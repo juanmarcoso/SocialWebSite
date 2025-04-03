@@ -1,0 +1,37 @@
+# Ignore the SQLite database file
+db.sqlite3
+
+# Ignore the Json database file
+mysite_data.json
+
+# Ignore __pycache__ directories inside the /blog folder
+/blog/__pycache__/
+
+# Ignore __pycache__ directories inside the /mysite folder
+/mysite/__pycache__/
+
+# Ignore virtual environment files (if you use one)
+venv/
+.env/
+
+# Ignore sensitive configuration files
+*.env
+*.key
+*.secret
+
+# Ignore IDE/Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore pip cache files
+pip-wheel-metadata/
+
+# Ignore personal documents
+comandos.txt
