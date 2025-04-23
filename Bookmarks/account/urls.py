@@ -7,6 +7,7 @@ urlpatterns = [
     # Previous login url
     #path('login/', views.user_login, name = 'login'),
     path('', views.dashboard, name='dashboard'),
-    path('', include('django.contrib.auth.urls'))
+    path('', include('django.contrib.auth.urls')),
+    path('register/', views.register, name='register'),
 
 ]
