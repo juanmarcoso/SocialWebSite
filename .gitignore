@@ -5,10 +5,13 @@ db.sqlite3
 mysite_data.json
 
 # Ignore __pycache__ directories inside the /blog folder
-/blog/__pycache__/
+/Bookmarks/__pycache__/
 
 # Ignore __pycache__ directories inside the /mysite folder
 /mysite/__pycache__/
+
+# Ignore migrations directorie
+/Bookmarks/account/migrations/
 
 # Ignore virtual environment files (if you use one)
 venv/
@@ -18,6 +21,7 @@ venv/
 *.env
 *.key
 *.secret
+/Bookmarks/Bookmarks/social_keys.py
 
 # Ignore IDE/Editor files
 .idea/
