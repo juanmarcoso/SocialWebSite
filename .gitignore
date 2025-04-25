@@ -11,7 +11,7 @@ mysite_data.json
 /mysite/__pycache__/
 
 # Ignore migrations directories
-account/migrations/
+Bookmarks/account/migrations
 
 # Ignore virtual environment files (if you use one)
 venv/
@@ -21,7 +21,7 @@ venv/
 *.env
 *.key
 *.secret
-/Bookmarks/Bookmarks/social_keys.py
+Bookmarks/Bookmarks/social_keys.py
 
 # Ignore IDE/Editor files
 .idea/

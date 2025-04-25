@@ -138,3 +138,14 @@ PASSWORD_HASHERS = [
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+try:
+    from .social_keys import (
+        SOCIAL_AUTH_FACEBOOK_KEY,
+        SOCIAL_AUTH_FACEBOOK_SECRET,
+        SOCIAL_AUTH_FACEBOOK_SCOPE
+    )
+except ImportError:
+    SOCIAL_AUTH_FACEBOOK_KEY = ''
+    SOCIAL_AUTH_FACEBOOK_SECRET = ''
+    SOCIAL_AUTH_FACEBOOK_SCOPE = []
