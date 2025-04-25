@@ -10,8 +10,8 @@ mysite_data.json
 # Ignore __pycache__ directories inside the /mysite folder
 /mysite/__pycache__/
 
-# Ignore migrations directorie
-/Bookmarks/account/migrations
+# Ignore migrations directories
+/account/migrations
 
 # Ignore virtual environment files (if you use one)
 venv/
