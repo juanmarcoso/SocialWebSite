@@ -11,7 +11,7 @@ mysite_data.json
 /mysite/__pycache__/
 
 # Ignore migrations directories
-/account/migrations
+./account/migrations/
 
 # Ignore virtual environment files (if you use one)
 venv/
