@@ -143,16 +143,21 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'social_score.backends.facebook.FacebookOAuth2',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.twitter.TwitterOAuth'
 ]
 
 try:
     from .social_keys import (
         SOCIAL_AUTH_FACEBOOK_KEY,
         SOCIAL_AUTH_FACEBOOK_SECRET,
-        SOCIAL_AUTH_FACEBOOK_SCOPE
+        SOCIAL_AUTH_FACEBOOK_SCOPE,
+        SOCIAL_AUTH_TWITTER_KEY,
+        SOCIAL_AUTH_TWITTER_SECRET,
     )
 except ImportError:
     SOCIAL_AUTH_FACEBOOK_KEY = ''
     SOCIAL_AUTH_FACEBOOK_SECRET = ''
     SOCIAL_AUTH_FACEBOOK_SCOPE = []
+    SOCIAL_AUTH_TWITTER_KEY = ''
+    SOCIAL_AUTH_TWITTER_SECRET = ''

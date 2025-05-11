@@ -27,6 +27,22 @@
         Forgotten your password?
       </a>      
     </p>
-
   </div>
+  <div class="social">
+    <ul>
+      <li class="facebook">
+        <a href="{% url 'social:begin' 'facebook' %}">
+          Sign in with facebook
+        </a>
+      </li>
+      <li class="twitter">
+        <a href="{% url 'social:begin' 'twitter' %}">
+          Sign in with Twitter
+        </a>
+      </li>
+    </ul>
+  </div>  
+    
+
+  
 {% endblock %}
