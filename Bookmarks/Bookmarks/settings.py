@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6be+(@rt8ug)a(*274-vzi-3n2)y1w8qz80soy*eyzr8jv5k#=
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mysite.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',    
+    'django.contrib.staticfiles', 
+    'social_django',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -138,6 +140,11 @@ PASSWORD_HASHERS = [
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'social_score.backends.facebook.FacebookOAuth2',
+]
 
 try:
     from .social_keys import (

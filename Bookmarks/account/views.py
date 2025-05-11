@@ -50,8 +50,7 @@ def edit(request):
             profile_form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            user_form = UserEditForm(instance=request.user)
-            profile_form = ProfileEditForm(instance=request.user.profile)
+            messages.error(request, 'Profile updated successfuly')
 
     else:
         user_form = UserEditForm(instance=request.user)
